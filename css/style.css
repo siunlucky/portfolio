@@ -174,7 +174,7 @@ img{
 /* NAV */
 
 .nav{
-    max-width: 968px;
+    
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -262,6 +262,20 @@ img{
 /* Change background header */
 .scroll-header{
     box-shadow: 0 -1px 4px rgba(0,0,0, .15);
+}
+
+/* Reveal Element on Scroll */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 /* HOME */
